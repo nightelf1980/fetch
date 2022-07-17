@@ -23,7 +23,7 @@ function renderProductosCarrito(){
             let precio = producto.precio * producto.cantidad;
             contenido += `
                 <tr>
-                    <td><img src="/assets/img/productos/${producto.imagen}" class="img-carrito" alt="${producto.title}"></td>
+                    <td><img src="../assets/img/productos/${producto.imagen}" class="img-carrito" alt="${producto.title}"></td>
                     <td class="align-middle text-center">${producto.title}</td>
                     <td class="align-middle text-center">${producto.cantidad}</td>
                     <td class="align-middle text-center"><b>$ ${precio}</b></td>
