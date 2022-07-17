@@ -95,7 +95,7 @@ function renderProductosDOM() {
 function actualizarBotonCarrito(){
     let productos = obtenerProductosCarrito();
     let contenido = `<button type="button" class="btn btn-success position-relative">
-    <img src="../assets/img/cart.png" width="24">
+    <img src="./assets/img/cart.png" width="24">
     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
 </button>`;
     let total = 0;
@@ -106,7 +106,7 @@ function actualizarBotonCarrito(){
             total += producto.cantidad;
         }
         contenido = `<button type="button" class="btn btn-success position-relative">
-        <img src="../assets/img/cart.png" width="24">
+        <img src="./assets/img/cart.png" width="24">
         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">${total}</span>
     </button>`;
     
