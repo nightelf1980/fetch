@@ -11,7 +11,7 @@ function renderProductosCarrito(){
         contenido = `
         <p class="text-end">
             <a href="#" class="btn btn-warning" onclick="vaciarCarrito()" title="Vaciar Carro">Vaciar Carro
-                <img src="/assets/img/trash.png" width="20">
+                <img src="../assets/img/trash.png" width="20">
             </a>
         </p>
         <table class="table">
@@ -27,7 +27,7 @@ function renderProductosCarrito(){
                     <td class="align-middle text-center">${producto.title}</td>
                     <td class="align-middle text-center">${producto.cantidad}</td>
                     <td class="align-middle text-center"><b>$ ${precio}</b></td>
-                    <td class="text-end"><a href="#" class="btn" onclick="eliminarItem(${producto.id})"><img src="/assets/img/eliminarItem.png" width="20" title="Eliminar item"></a></td>
+                    <td class="text-end"><a href="#" class="btn" onclick="eliminarItem(${producto.id})"><img src="../assets/img/eliminarItem.png" width="20" title="Eliminar item"></a></td>
                 </tr>
             `;
             total += precio;
