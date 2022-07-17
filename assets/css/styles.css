@@ -1,0 +1,132 @@
+/* Fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+/* Cards */
+.card-img-top{
+    border-radius: 10px;
+}
+
+.img-carrito{
+    width: 30px;
+}
+
+/* Texto */
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0px;
+    font-weight: 900;
+}
+  
+h2 {
+    margin: 20px 0px;
+    font-weight: 700;
+}
+  
+h3 {
+    margin: 15px 0px;
+    font-weight: 500;
+}
+
+.color_link{
+    color: black;
+}
+
+.nav-link{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.dropdown-item{
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+footer {
+    background-image: url(../img/footer-bacnkground.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.225);
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.225);
+}
+
+/* 404 */
+
+#notfound {
+    position: relative;
+    height: 100vh;
+}
+  
+#notfound .notfound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+  
+.notfound {
+    max-width: 410px;
+    width: 100%;
+    text-align: center;
+}
+  
+.notfound .notfound-404 {
+    height: 280px;
+    position: relative;
+    z-index: -1;
+}
+  
+.notfound .notfound-404 h1 {
+    font-size: 230px;
+    margin: 0px;
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background: url("../img/404.jpg") no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    background-position: center;
+}
+  
+.notfound h2 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+  
+.notfound p {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.button-back a {
+    text-decoration: none;
+    color: #fff;
+}
+  
+.notfound a {
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #198754;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 400;
+}
