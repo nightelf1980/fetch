@@ -17,7 +17,7 @@ function renderPrincipalDOM(){
         card.className ="card";
 
         let imagen = document.createElement("img");
-        imagen.src = `/assets/img/principalCard/${producto.imagen}`;
+        imagen.src = `./assets/img/principalCard/${producto.imagen}`;
         imagen.className = "card-img-top";
         imagen.alt = producto.title;
 
@@ -69,7 +69,7 @@ function renderVentaPrincipalDOM(){
         card.className ="card";
 
         let imagen = document.createElement("img");
-        imagen.src = `../assets/img/principalCard/${producto.imagen}`;
+        imagen.src = `./assets/img/principalCard/${producto.imagen}`;
         imagen.className = "card-img-top";
         imagen.alt = producto.title;
 
