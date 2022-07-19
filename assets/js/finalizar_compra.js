@@ -35,8 +35,8 @@ function renderFinalizarCompra(){
                 <td class="text-center" colspan="2"><b>Total a pagar</b></td>
                 <td class="text-center">${totalItems} productos</td>
                 <td class="text-center"><b>$ ${total}</b></td>
-                <td class="text-end"><a href="../views/carrito.html" target=_blank class="btn btn-success">Ver carrito</a></td>
-                <td class="text-end"><a href="https://www.webpay.cl" target=_blank class="btn btn-primary">Finalizar compra</a></td>
+                <td class="text-end"><a href="../views/carrito.html" class="btn btn-success">Ver carrito</a></td>
+                <td class="text-end"><a href="https://www.webpay.cl" class="btn btn-primary">Ir a pagar</a></td>
             </tr>
         `
 
