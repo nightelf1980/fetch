@@ -38,7 +38,7 @@ function renderProductosCarrito(){
                     <td class="align-middle text-center">${producto.title}</td>
                     <td class="align-middle text-center">${producto.cantidad}</td>
                     <td class="align-middle text-center"><b>$ ${precio}</b></td>
-                    <td class="text-end"><a href="#!" class="btn" onclick="eliminarItem(${producto.id})"><img src="../assets/img/eliminarItem.png" width="20" title="Eliminar item"></a></td>
+                    <td class="text-end"><a href="#" class="btn" onclick="eliminarItem(${producto.id})"><img src="../assets/img/eliminarItem.png" width="20" title="Eliminar item"></a></td>
                 </tr>
             `;
             total += precio;

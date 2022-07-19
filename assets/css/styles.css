@@ -15,6 +15,24 @@ body {
     width: 30px;
 }
 
+form{
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.mainFinalizarCompra{
+    background-image: url(../img/footer-bacnkground.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.finalizarCompra{
+    border-radius: 10px;
+}
+
 /* Texto */
 h1 {
     text-align: center;

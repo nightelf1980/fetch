@@ -10,48 +10,37 @@ function renderProductosCarrito(){
         
         contenido = `
         <p class="text-end">
-            <a href="#" class="btn btn-warning py-10" onclick="vaciarCarrito()" title="Vaciar Carro">Vaciar Carro
+            <a href="#" class="btn btn-warning" onclick="vaciarCarrito()" title="Vaciar Carro">Vaciar Carro
                 <img src="../assets/img/trash.png" width="20">
             </a>
         </p>
         <table class="table">
-        <thead>
-        <tr>
-          <th scope="col" class="align-middle text-center">Imagen</th>
-          <th scope="col" class="align-middle text-center">Descripción</th>
-          <th scope="col" class="align-middle text-center">Cantidad</th>
-          <th scope="col" class="align-middle text-center">Precio</th>
-          <th scope="col" class="align-middle text-center">Agregar/Eliminar Item</th>
-        </tr>
-      </thead>
         `;
 
         let total = 0;
-        let totalItems = 0;
         
         for (let producto of productos) {
             let precio = producto.precio * producto.cantidad;
             contenido += `
-
                 <tr>
-                    <td class="align-middle text-center"><img src="../assets/img/productos/${producto.imagen}" class="img-carrito" alt="${producto.title}"></td>
+                    <td><img src="../assets/img/productos/${producto.imagen}" class="img-carrito" alt="${producto.title}"></td>
                     <td class="align-middle text-center">${producto.title}</td>
                     <td class="align-middle text-center">${producto.cantidad}</td>
                     <td class="align-middle text-center"><b>$ ${precio}</b></td>
-                    <td class="text-end"><a href="#!" class="btn" onclick="eliminarItem(${producto.id})"><img src="../assets/img/eliminarItem.png" width="20" title="Eliminar item"></a></td>
+                    <td class="text-end"><a href="#" class="btn" onclick="eliminarItem(${producto.id})"><img src="../assets/img/eliminarItem.png" width="20" title="Eliminar item"></a></td>
                 </tr>
             `;
             total += precio;
-            totalItems += producto.cantidad;
             
         }
         
         contenido += `
             <tr class="alert alert-success" role="alert">
-                <td class="text-center" colspan="2"><b>Total a pagar</b></td>
-                <td class="text-center">${totalItems} productos</td>
+                <td>&nbsp;</td>
+                <td class="text-center"><b>Total a pagar</b></td>
+                <td>&nbsp;</td>
                 <td class="text-center"><b>$ ${total}</b></td>
-                <td class="text-end"><a href="../views/finalizarCompra.html" class="btn btn-success">Finalizar compra</a></td>
+                <td class="text-end"><a href="https://www.webpay.cl/" target="_blank" class="btn btn-success">Finalizar compra</a></td>
             </tr>
         `
 
