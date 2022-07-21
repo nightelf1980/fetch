@@ -31,8 +31,8 @@ const productos = [
     {id:30,title:"Dólar Negro",precio:"6000",descripcion:"",imagen:"dolarnegro.jpg",categoria:1},
     {id:31,title:"Dólar Variegado",precio:"6000",descripcion:"",imagen:"dolarvariegado.jpg",categoria:1},
     {id:32,title:"Dólar Verde",precio:"6000",descripcion:"",imagen:"dolarverde.jpg",categoria:1},
-    {id:33,title:"Tierra de hoja, 100% orgánica 20L",precio:"4500",descripcion:"40L",imagen:"tierradehoja.jpg",categoria:2},
-    {id:34,title:"Tierra de hoja, 100% orgánica 50L",precio:"6000",descripcion:"50L",imagen:"tierradehoja.jpg",categoria:2},
-    {id:35,title:"Sustrato para plantas de interior 3L",precio:"2500",descripcion:"3L",imagen:"sustratos.jpg",categoria:2},
-    {id:36,title:"Sustrato para plantas de interior 10L",precio:"7500",descripcion:"10L",imagen:"sustratos.jpg",categoria:2}
+    {id:33,title:"Tierra de hoja orgánica 20L",precio:"4500",descripcion:"40L",imagen:"tierradehoja.jpg",categoria:2},
+    {id:34,title:"Tierra de hoja orgánica 50L",precio:"6000",descripcion:"50L",imagen:"tierradehoja.jpg",categoria:2},
+    {id:35,title:"Sustrato plantas de interior 3L",precio:"2500",descripcion:"3L",imagen:"sustratos.jpg",categoria:2},
+    {id:36,title:"Sustrato plantas de interior 10L",precio:"7500",descripcion:"10L",imagen:"sustratos.jpg",categoria:2}
 ];
