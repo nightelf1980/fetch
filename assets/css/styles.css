@@ -1,29 +1,50 @@
-/* Fuentes */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+/* FONTS */
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto',sans-serif;
     text-align: justify;
+    margin:0;
+    padding: 0;
 }
 
-/* Cards */
+/* CARDS */
 .card-img-top{
     border-radius: 10px;
 }
 
-.img-carrito{
-    width: 30px;
+.card-title{
+    color: rgb(22, 22, 22);
+    font-size: 1rem;
 }
 
+.card-footer a{
+    font-size: 0.9rem;
+}
+
+/*FORMS */
 form{
     background-color: #f8f9fa;
+    font-size: 0.9rem;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 10px;
 }
 
+/*CARRITO*/
+.img-carrito{
+    width: 40px;
+    border-radius: 5px;
+}
+
+.table>:not(caption)>*>* {
+    font-size: 0.9rem;
+    padding: 1rem 0rem;
+}
+
 .mainFinalizarCompra{
-    background-image: url(../img/footer-bacnkground.png);
+    background-image: url(../img/bg-carro.png);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -33,26 +54,25 @@ form{
     border-radius: 10px;
 }
 
-/* Texto */
+/* TITLES */
 h1 {
     text-align: center;
     text-transform: uppercase;
-    margin: 30px 0px;
-    font-weight: 900;
+    font-weight: 700;
 }
   
 h2 {
     margin: 20px 0px;
-    font-weight: 700;
+    font-weight: 500;
 }
   
 h3 {
     margin: 15px 0px;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .color_link{
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .nav-link{
@@ -110,6 +130,7 @@ footer {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     background: url("../img/404.jpg") no-repeat;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: cover;

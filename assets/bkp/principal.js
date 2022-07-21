@@ -52,7 +52,8 @@ function renderPrincipalDOM(){
 renderPrincipalDOM();
 
 const ventaPrincipal = [
-    {id:1, title:"Productos a la venta",text:"Hermosas plantas tanto de interior como de exterior. Enorme variedad y belleza",imagen:"interioryexteriorCard.jpg",link:"productos.html"},
+    {id:1, title:"Productos a la venta",text:"Hermosas plantas tanto de interior como de exterior.",imagen:"interioryexteriorCard.jpg",link:"interiorexterior.html"},
+    {id:2, title:"Sustratos",text:"Tierra de hoja y sustratos para suculentas y plantas de interior",imagen:"sustratosCard.jpg",link:"sustratos.html"}
 ];
 
 function obtenerVentaPrincipalLS() {
@@ -62,8 +63,9 @@ function obtenerVentaPrincipalLS() {
 function renderVentaPrincipalDOM(){
     let productos = obtenerVentaPrincipalLS();
     for (let producto of ventaPrincipal) {
+        console.log(productos);
         let columna = document.createElement("div");
-        columna.className = "col-md-6 offset-md-3 py-3";
+        columna.className = "col-md-6 py-3";
 
         let card = document.createElement("div");
         card.className ="card";

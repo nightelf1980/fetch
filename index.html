@@ -15,7 +15,7 @@
     <title>Jardinería Artemis</title>
 </head>
 <body>
-    <!-- HEADER -->     
+    <!-- HEADER --> 
     <header class="container-fluid bg-light sticky-md-top">
         <div class="row d-flex">
             <!-- NAVBAR -->
@@ -34,7 +34,7 @@
                                 <a class="nav-link" href="./views/suculentas.html">Suculentas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./views/productos.html">Productos a la Venta</a>
+                                <a class="nav-link" href="./views/productos.html">Productos a la venta</a>
                             </li>
                         </ul>
                     </div>
@@ -107,17 +107,68 @@
                 </div>
             </div>
 
-            <!-- CARDS JS DOM-->
+            <!-- CARDS PRODUCTOS JS-->
             <div class="container">
                 <div class="tarjetas d-flex justify-content-center">
-                    <div class="row col-md-10" id="principal"></div>
+                    <div class="row col-md-10">
+                        <div class="col-md-6 py-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./assets/img/principalCard/cactusCard.jpg" class="card-img-top" alt="Cactus">
+                                    <h5 class="card-title text-center py-1">Cactus</h5>
+                                    <p class="card-title text-center">Las cactáceas, son conocidas en conjunto como cactos, cactus o cacti</p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="./views/cactus.html" class="btn boton-ver btn-secondary">Más información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./assets/img/principalCard/suculentasCard.jpg" class="card-img-top" alt="Suculentas">
+                                    <h5 class="card-title text-center py-1">Suculentas</h5>
+                                    <p class="card-title text-center">La palabra 'Suculenta' viene del latín succulentus, que significa: 'jugoso'</p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="./views/suculentas.html" class="btn boton-ver btn-secondary">Más información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="text">
                         <h2 class="text-center">Productos a la venta</h2>
                     </div>
-                <div class="ventas d-flex justify-content-center">
-                    <div class="row col-md-10" id="ventaPrincipal"></div>
+                </div>
+                <div class="row">
+                    <div class="d-flex justify-content-center">
+                        <div class="row col-md-10">
+                        <div class="col-md-6 py-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./assets/img/principalCard/interioryexteriorCard.jpg" class="card-img-top" alt="Productos a la venta">
+                                    <h5 class="card-title text-center py-1">Productos a la venta</h5>
+                                    <p class="card-title text-center">Hermosas plantas tanto de interior como de exterior.</p>
+                                </div>
+                                <div class="card-footer text-center">
+                                <a href="./views/interiorexterior.html" class="btn boton-ver btn-success">Ir a comprar</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="./assets/img/principalCard/sustratosCard.jpg" class="card-img-top" alt="Sustratos">
+                                        <h5 class="card-title text-center py-1">Sustratos</h5>
+                                        <p class="card-title text-center">Tierra de hoja y sustratos para suculentas y plantas de interior</p></div>
+                                    <div class="card-footer text-center">
+                                        <a href="./views/sustratos.html" class="btn boton-ver btn-success">Ir a comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -190,8 +241,9 @@
         </div>
     </footer>
 
+<script src="./assets/js/funciones.js"></script>
+<script src="./assets/js/productos.js"></script>
 <script src="./assets/js/main.js"></script>
-<script src="./assets/js/principal.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
