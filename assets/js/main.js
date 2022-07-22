@@ -3,7 +3,7 @@ function renderProductosDOM() {
         for (let producto of productos){
         if(producto.categoria == 1) {
             let columna = document.createElement("div");
-            columna.className = "col-md-3 py-3";
+            columna.className = "col-lg-3 col-md-4 col-sm-6 py-3 cardProductos";
 
             let card = document.createElement("div");
             card.className ="card";

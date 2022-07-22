@@ -31,8 +31,12 @@ const productos = [
     {id:30, title:"Dólar Negro", precio:"6000", descripcion:"", imagen:"dolarnegro.jpg", categoria:1},
     {id:31, title:"Dólar Variegado", precio:"6000", descripcion:"", imagen:"dolarvariegado.jpg", categoria:1},
     {id:32, title:"Dólar Verde", precio:"6000", descripcion:"", imagen:"dolarverde.jpg", categoria:1},
-    {id:33, title:"Tierra de hoja orgánica 20L", precio:"4500", descripcion:"40L", imagen:"tierradehoja.jpg", categoria:2},
-    {id:34, title:"Tierra de hoja orgánica 50L", precio:"6000", descripcion:"50L", imagen:"tierradehoja.jpg", categoria:2},
-    {id:35, title:"Sustrato plantas de interior 3L", precio:"2500", descripcion:"3L", imagen:"sustratos.jpg", categoria:2},
-    {id:36, title:"Sustrato plantas de interior 10L", precio:"7500", descripcion:"10L", imagen:"sustratos.jpg", categoria:2}
+    {id:33, title:"Dracena Lemon", precio:"7500", descripcion:"", imagen:"dracenalimon.jpg", categoria:1},
+    {id:34, title:"Dracena Multicolor", precio:"12000", descripcion:"", imagen:"dracenamulticolor.jpg", categoria:1},
+    {id:35, title:"Dracena Verde", precio:"10500", descripcion:"", imagen:"dracenaverde.jpg", categoria:1},
+    {id:36, title:"Echeveria Agavoides", precio:"3500", descripcion:"", imagen:"echeveriaagavoides.jpg", categoria:1},
+    {id:37, title:"Tierra de hoja orgánica 20L", precio:"4500", descripcion:"40L", imagen:"tierradehoja.jpg", categoria:2},
+    {id:38, title:"Tierra de hoja orgánica 50L", precio:"6000", descripcion:"50L", imagen:"tierradehoja.jpg", categoria:2},
+    {id:39, title:"Sustrato plantas de interior 3L", precio:"2500", descripcion:"3L", imagen:"sustratos.jpg", categoria:2},
+    {id:40, title:"Sustrato plantas de interior 10L", precio:"7500", descripcion:"10L", imagen:"sustratos.jpg", categoria:2}
 ];

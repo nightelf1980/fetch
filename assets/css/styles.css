@@ -1,6 +1,6 @@
 /* FONTS */
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Roboto&display=swap');
 
 body {
     font-family: 'Roboto',sans-serif;
@@ -23,7 +23,7 @@ body {
     font-size: 0.9rem;
 }
 
-/*FORMS */
+/* FORMS */
 form{
     background-color: #f8f9fa;
     font-size: 0.9rem;
@@ -72,9 +72,7 @@ h3 {
     font-weight: 300;
 }
 
-.color_link{
-    color: rgb(0, 0, 0);
-}
+/* NAVBAR */
 
 .nav-link{
     font-weight: 400;
@@ -86,6 +84,7 @@ h3 {
     text-transform: uppercase;
 }
 
+/* FOOTER  */ 
 footer {
     background-image: url(../img/footer-bacnkground.png);
     background-position: center center;
@@ -96,7 +95,6 @@ footer {
 }
 
 /* 404 */
-
 #notfound {
     position: relative;
     height: 100vh;
@@ -169,4 +167,27 @@ footer {
     border-radius: 10px;
     color: #fff;
     font-weight: 400;
+}
+
+
+/* SEARCHBAR */
+#searchbar{
+    margin: 10px;
+    padding:15px;
+    border-radius: 10px;
+    background-color: #19875411;
+}
+
+/* @MEDIAQUERIES */
+
+/* NAVBAR & CART*/
+@media (min-width: 321px) {
+    .col-md-11 {
+        flex: 0 0 auto;
+        width: 85%;
+    }
+    .col-md-1 {
+        flex: 0 0 auto;
+        width: 10%;
+    }
 }

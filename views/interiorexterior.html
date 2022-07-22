@@ -56,8 +56,15 @@
 
         <!-- CARDS PRODUCTOS MAIN.JS-->
         <div class="row">
-            <div class="tarjetas d-flex justify-content-center">
-                <div class="row col-md-12 col-sm-10" id="productos"></div>
+            <div class="row col-md-9">
+            </div>
+            <div class="row col-md-3">
+                <input type="text" id="searchbar" onkeyup="search()" placeholder="Buscar por nombre">
+            </div>
+        </div>
+        <div class="row">
+            <div class="tarjetas d-flex justify-content-center col-xs-10">
+                <div class="row col-md-12 col-sm-10 col-10" id="productos"></div>
             </div>
         </div>
         <div class="row">
@@ -138,6 +145,7 @@
 
 <!-- JS CODE-->
 <script src="../assets/js/funciones.js"></script>
+<script src="../assets/js/search.js"></script>
 <script src="../assets/js/productos.js"></script>
 <script src="../assets/js/main.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
