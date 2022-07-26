@@ -55,7 +55,7 @@ function renderProductosCarrito(){
                 <td></td>
             </tr>
             <tr>
-                <td class="text-end" colspan="5"><a href="../views/finalizarCompra.html" class="btn btn-success" title="Finalizar compra">Finalizar compra <i class="fa-solid fa-check"></i></a></td>
+                <td class="text-end" colspan="5"><a href="../views/finalizarCompra.html" class="btn btn-success" title="Finalizar">Finalizar compra <i class="fa-solid fa-check"></i></a></td>
             </tr>
         `
 
@@ -116,7 +116,7 @@ function eliminarItem(id) {
         position: "center", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
-          background: "linear-gradient(to left, #f13000, #ffe600)",
+          background: "linear-gradient(to left, #ff9e0d, #f13000)",
         },
         className: "bt-toast",
         onClick: function(){} // Callback after click
