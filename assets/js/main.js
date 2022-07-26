@@ -38,9 +38,11 @@ function renderProductosDOM() {
             columna.appendChild(card);
         
             document.getElementById("productos").appendChild(columna);
-        }
-    }
+        };
+    };
 };
+
+renderProductosDOM();
 
 function actualizarBotonCarrito(){
     let productos = obtenerProductosCarrito();
@@ -120,4 +122,3 @@ function vaciarCarrito(){
 
 guardarProductosLS(productos);
 actualizarBotonCarrito();
-renderProductosDOM();
