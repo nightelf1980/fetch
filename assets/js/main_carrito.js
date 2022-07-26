@@ -39,7 +39,7 @@ function renderProductosCarrito(){
                     </td>
                     <td class="align-middle text-center"><b>$ ${precio}</b></td>
                     <td class="align-middle text-center" width="50">
-                        <a href="#!" class="btn" onclick="quitarItem(${producto.id})" title="Quitar del carro"><i class="fa-solid fa-trash-can"></i></td>
+                        <a href="#!" class="btn" onclick="quitarItem(${producto.id})" title="Quitar del carro"><i class="fa-solid fa-trash"></i></td>
                     </tr>
             `;
             total += precio;
@@ -55,7 +55,7 @@ function renderProductosCarrito(){
                 <td></td>
             </tr>
             <tr>
-                <td class="text-end" colspan="5"><a href="../views/finalizarCompra.html" class="btn btn-success">Finalizar compra</a></td>
+                <td class="text-end" colspan="5"><a href="../views/finalizarCompra.html" class="btn btn-success" title="Finalizar compra">Finalizar compra <i class="fa-solid fa-check"></i></a></td>
             </tr>
         `
 

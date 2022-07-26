@@ -55,13 +55,13 @@ function renderFinalizarCompra(){
                 <td class="text-center"><b>$ ${ totalAPagar}</b></td>
             </tr>
             <tr class="bg-warning bg-opacity-25">
-                <td class="text-center" colspan="2" ><i class="fa-solid fa-circle-exclamation"></i> Faltan solamente <b>$${diffEnvio}</b> en compras para despacho gratis</td>
+                <td class="text-center" colspan="2"><i class="fa-solid fa-circle-exclamation fa-lg"></i> Faltan <b>$${diffEnvio}</b> en compras para despacho gratis</td>
             </tr>
             <tr>
-                <td class="text-end" colspan="2"><a href="https://www.webpay.cl" class="btn btn-primary"><i class="fa-solid fa-hand-holding-dollar"></i> Ir a pagar</a></td>
+                <td class="text-end" colspan="2"><a href="https://www.webpay.cl" class="btn btn-primary"><i class="fa-solid fa-hand-holding-dollar "></i> Ir a pagar</a></td>
             </tr>
             <tr class="alert" role="alert">
-                <td class="text-center" colspan="2"><i class="fa-solid fa-lock"></i> Compra 100% segura</td>
+                <td class="text-center" colspan="2"><i class="fa-solid fa-lock fa-lg"></i> Compra 100% segura</td>
             </tr>
             `
             contenido += `</table>`
@@ -91,13 +91,13 @@ function renderFinalizarCompra(){
                 <td class="text-center"><b>$ ${ totalAPagar}</b></td>
             </tr>
             <tr class="bg-success bg-opacity-25">
-                <td class="text-center" colspan="2"><i class="fa-solid fa-clipboard-check"></i> Tienes despacho gratis</td>
+                <td class="text-center" colspan="2"><i class="fa-solid fa-clipboard-check fa-lg"></i> Tienes despacho gratis</td>
             </tr>
             <tr>
                 <td class="text-end" colspan="2"><a href="https://www.webpay.cl" class="btn btn-primary"><i class="fa-solid fa-hand-holding-dollar"></i> Ir a pagar</a></td>
             </tr>
             <tr class="alert" role="alert">
-                <td class="text-center" colspan="2"><i class="fa-solid fa-lock"></i> Compra 100% segura</td>
+                <td class="text-center" colspan="2"><i class="fa-solid fa-lock fa-lg"></i> Compra 100% segura</td>
             </tr>
         `
 
