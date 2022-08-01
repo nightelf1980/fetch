@@ -1,7 +1,5 @@
-// JavaScript code
 function search() {
-    let input = document.getElementById('searchbar').value;
-    input = input.toLowerCase();
+    let input = document.getElementById('searchbar').value.toLowerCase();
     let x = document.getElementsByClassName('cardProductos');
       
     for (i = 0; i < x.length; i++) { 

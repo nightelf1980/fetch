@@ -1,24 +1,3 @@
-function guardarProductosLS(productos) {
-    localStorage.setItem("productos", JSON.stringify(productos));
-}
-
-function obtenerProductosLS() {
-    return JSON.parse(localStorage.getItem("productos")) || [];
-}
-
-function buscarProducto(id){
-    let productos = obtenerProductosLS();
-    return productos.find(x => x.id == id);
-}
-
-function obtenerProductosCarrito() {
-    return JSON.parse(localStorage.getItem("carrito")) || [];
-}
-
-function guardarProductosCarrito(productos) {
-    localStorage.setItem("carrito", JSON.stringify(productos));
-}
-
 function actualizarBotonCarrito(){
     let productos = obtenerProductosCarrito();
     let contenido = `<button type="button" class="btn btn-success position-relative">
@@ -95,3 +74,6 @@ function vaciarCarrito(){
         }
       })
 }
+
+guardarProductosLS(productos);
+actualizarBotonCarrito();

@@ -1,48 +1,23 @@
-function renderProductosDOM() {
-    let productos = obtenerProductosLS();
-        for (let producto of productos){
-        if(producto.categoria == 1) {
-            let columna = document.createElement("div");
-            columna.className = "col-lg-3 col-md-4 col-sm-6 py-3 cardProductos";
+function guardarProductosLS(productos) {
+    localStorage.setItem("productos", JSON.stringify(productos));
+}
 
-            let card = document.createElement("div");
-            card.className ="card";
+function obtenerProductosLS() {
+    return JSON.parse(localStorage.getItem("productos")) || [];
+}
 
-            let imagen = document.createElement("img");
-            imagen.src = `../assets/img/productos/${producto.imagen}`;
-            imagen.className = "card-img-top";
-            imagen.alt = producto.title;
+function buscarProducto(id){
+    let productos = obtenerProductos();
+    return productos.find(x => x[id] == id);
+}
 
-            let card_body = document.createElement("div");
-            card_body.className ="card-body";
+function obtenerProductosCarrito() {
+    return JSON.parse(localStorage.getItem("carrito")) || [];
+}
 
-            let titulo = document.createElement("h6");
-            titulo.className = "card-title text-center py-1";
-            titulo.innerHTML = producto.title;
-
-            let precio = document.createElement("p");
-            precio.className = "card-title text-center";
-            precio.innerHTML = `$ ${producto.precio}`;
-
-            let comprar = document.createElement("div");
-            comprar.className = "card-footer text-center";
-            comprar.innerHTML = `<a href="#!" class="btn btn-secondary" title="Agregar al carro" onclick="agregarCarrito(${producto.id})">Agregar a mi carro</a></div>`;
-            
-            card_body.appendChild(imagen);
-            card_body.appendChild(titulo);
-            card_body.appendChild(precio);
-                    
-            card.appendChild(card_body);
-            card.appendChild(comprar);
-
-            columna.appendChild(card);
-        
-            document.getElementById("productos").appendChild(columna);
-        };
-    };
-};
-
-renderProductosDOM();
+function guardarProductosCarrito(productos) {
+    localStorage.setItem("carrito", JSON.stringify(productos));
+}
 
 function actualizarBotonCarrito(){
     let productos = obtenerProductosCarrito();
@@ -120,6 +95,3 @@ function vaciarCarrito(){
         }
       })
 }
-
-guardarProductosLS(productos);
-actualizarBotonCarrito();
